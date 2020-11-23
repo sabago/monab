@@ -1,0 +1,76 @@
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://res.cloudinary.com/sabago/image/upload/v1605887967/portfolio/lucien_piccard_right_hzodyx.jpg) center center;
+    background-size: cover;
+  }
+  .box {
+    background: rgba(255,255,255,.7);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  a {
+    color: #0bd;
+  } */
+  #store {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  .container {
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    /* background: hsla(0, 0%, 100%, 0.5); */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px black;
+    font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
+  }
+  
+  .store-button {
+    font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #monab-watches-link {
+    color: yellow;
+  }
+  /* h1 {
+    font-size: 50px;
+  }
+  
+  .button {
+    width: 20%;
+    margin: 10px 0;
+  } */
+
+  #sq_104i, #sq_105i, #sq_106i, #sq_116i, #sq_117i {
+    width: 340px;
+    height: 2em;
+  }
+  textarea {
+    width: 340px;
+    height: 2em;
+  }
+  @media (max-width: 400px) {
+    textarea {
+      width: 320px !important;
+    }
+    .container {
+      width: 340px !important;
+      margin: 0 auto;
+      left: 5% !important;
+    }
+  }
