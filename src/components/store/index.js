@@ -29,90 +29,92 @@ export function Store() {
 //     .applyTheme("bootstrap");
 // Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
   let json = {
-    "pages": [
-     {
-      "name": "monab accessories",
-      "elements": [
+      "pages": [
        {
-        "type": "checkbox",
-        "name": "watch brand options",
-        "title": "Tell us about some of your favorite watch brands. (Select as many as apply)",
-        "isRequired": true,
-        "choices": [
+        "name": "monab accessories",
+        "elements": [
          {
-          "value": "seiko",
-          "text": "Seiko"
-         },
-         {
-          "value": "citizen",
-          "text": "Citizen"
-         },
-         {
-          "value": "gshock",
-          "text": "G-Shock"
-         },
-         {
-          "value": "timex",
-          "text": "Timex"
-         },
-         {
-          "value": "fossil",
-          "text": "Fossil"
-         },
-         {
-          "value": "tissot",
-          "text": "Tissot"
-         },
-         {
-          "value": "swiss-army",
-          "text": "Siwss Army"
-         },
-         {
-          "value": "casio",
-          "text": "Casio"
-         },
-        //  {
-        //   "value": "orient",
-        //   "text": "Orient"
-        //  },
-        //  {
-        //   "value": "victorinix",
-        //   "text": "Victorinix"
-        //  },
-         {
-          "value": "invicta",
-          "text": "Invicta"
-         },
-         {
-          "value": "tagheuer",
-          "text": "Tag Heuer"
+          "type": "checkbox",
+          "name": "watch brand options",
+          "title": "Tell us about some of your favorite watch brands. (Select as many as apply)",
+          "isRequired": true,
+          "choices": [
+           {
+            "value": "seiko",
+            "text": "Seiko"
+           },
+           {
+            "value": "citizen",
+            "text": "Citizen"
+           },
+           {
+            "value": "gshock",
+            "text": "G-Shock"
+           },
+           {
+            "value": "timex",
+            "text": "Timex"
+           },
+           {
+            "value": "fossil",
+            "text": "Fossil"
+           },
+           {
+            "value": "tissot",
+            "text": "Tissot"
+           },
+           {
+            "value": "swiss-army",
+            "text": "Siwss Army"
+           },
+           {
+            "value": "casio",
+            "text": "Casio"
+           },
+           {
+            "value": "orient",
+            "text": "Orient"
+           },
+           {
+            "value": "victorinix",
+            "text": "Victorinix"
+           },
+           {
+            "value": "invicta",
+            "text": "Invicta"
+           },
+           {
+            "value": "tagheuer",
+            "text": "Tag Heuer"
+           }
+          ]
          }
         ]
        },
        {
-        "type": "comment",
-        "name": "watch brand inputs",
-        "visibleIf": "{watch brand options} notempty",
-        "title": "What other brands would you like to see in our store?",
-        "isRequired": true
-       },
-       {
-        "type": "comment",
-        "name": "wallet brands",
-        "visibleIf": "{watch brand inputs} notempty",
-        "title": "Please tell us about your favorite wallet and sunglasses brands...",
-        "isRequired": true
+        "name": "questions page",
+        "elements": [
+         {
+          "type": "comment",
+          "name": "other watch brands",
+          "visibleIf": "{watch brand options} notempty",
+          "title": " What other watch brands would you like to see in our store?",
+          "isRequired": true
+         },
+         {
+          "type": "comment",
+          "name": "wallet brands",
+          "title": "Please tell us about your favorite wallet brands..."
+         },
+         {
+          "type": "comment",
+          "name": "sunglasses brands",
+          "title": "Got any favorite sunglasses brands?"
+         }
+        ]
        }
-      //  {
-      //   "type": "comment",
-      //   "name": "sunglasses inputs",
-      //   "visibleIf": "{wallet brands} notempty",
-      //   "title": "Got any favorite sunglasses brands?"
-      //  }
       ]
      }
-    ]
-   }
 
 function sendDataToServer(survey: any) {
   //send Ajax request to your web server.

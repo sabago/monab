@@ -50,7 +50,7 @@ export function Home() {
                         We promise authenticity of all our goods and stand by this promise.
                     </p>
                     <p>
-                        Currently, most of our stock is online. A physical store 
+                        Currently, most of our stock is online abroad. A physical store 
                         will be coming soon. In the meantime please check out our online store, where you can 
                         take a survey to let us know which accessories you would love
                         to see in our store!
