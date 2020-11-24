@@ -138,7 +138,7 @@ survey.surveyPostId = "d96ec105-334f-4742-a5f9-5608294290a7";
     >
       {({ pause, play }) => (
         <div className="container">
-          <h1 style={{color: "white"}}>COMING SOON!</h1>
+          <h1 style={{color: "white", minWidth:250}}>COMING SOON!</h1>
           {<Survey.Survey model={survey} onComplete={sendDataToServer(survey)} isExpanded={true}/>}
           <h3><a id="monab-watches-link"  target="_blank" href="/"> Website </a></h3>
           <button className='store-button' onClick={toggleModal}> Subscribe to learn about incoming items</button>
